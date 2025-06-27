@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+.tajawal-extralight {
+    font-weight: 200 !important;
+    font-style: normal !important;
+}
+
+.tajawal-light {
+    font-weight: 300 !important;
+    font-style: normal !important;
+}
+
+.tajawal-regular {
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+
+.tajawal-medium {
+    font-weight: 500 !important;
+    font-style: normal !important;
+}
+
+.tajawal-bold {
+    font-weight: 700 !important;
+    font-style: normal !important;
+}
+
+.tajawal-extrabold {
+    font-weight: 800 !important;
+    font-style: normal !important;
+}
+
+.tajawal-black {
+    font-weight: 900 !important;
+    font-style: normal !important;
+}
+
+/* general Css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Tajawal", sans-serif !important;
+}
+
+body {
+    background-image: url('/assets/images/back.png');
+}
+
+/* black: #040405;
+red:#ec1c23
+green:#3d8f57 */

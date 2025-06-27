@@ -1,0 +1,105 @@
+/* Responsive typography */
+.small-text {
+    font-size: 1.25rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.big-heading {
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+    .big-heading {
+        font-size: 2rem;
+    }
+
+    .small-text {
+        font-size: 1rem;
+    }
+
+    .text-muted {
+        font-size: 0.875rem;
+    }
+
+    img {
+        max-width: 250px !important;
+    }
+}
+
+/* Input validation styling */
+input.ng-invalid.ng-touched,
+input.ng-invalid.ng-dirty {
+    border-color: #ec1c23;
+}
+
+/* Color styling */
+p,
+h1,
+h3 {
+    color: #040405;
+}
+
+.submit {
+    color: #fff;
+    border: 0 !important;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.85 !important;
+    background-color: #ec1c23 !important;
+    color: #fff !important;
+    border: 0 !important;
+}
+
+.form-control {
+    transition: border-color 0.15s ease-in-out !important;
+    box-shadow: none !important;
+}
+
+/* Container for success and error messages */
+.message-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animation for success and error messages */
+.fade-in-out {
+    animation: fadeInOut 3s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .message-container {
+        width: 100%;
+    }
+}
